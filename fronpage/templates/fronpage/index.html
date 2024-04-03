@@ -1,0 +1,397 @@
+{% extends 'fronpage/main.html' %}
+{% load static %}
+{% block content %}
+<main>
+    <!-- slideshow content begin -->
+		<div class="uk-section uk-padding-remove-vertical uk-scrollspy-inview uk-animation-fade" data-uk-scrollspy="cls:uk-animation-fade; delay: 200">
+			<div class="uk-container">
+				<div class="in-slideshow uk-position-relative uk-visible-toggle" data-uk-slideshow>
+					<ul class="uk-slideshow-items">
+						<li>
+							<div class="uk-height-1-1 uk-light monee-custom-slideshow" data-uk-grid>
+								<img class="in-img-stretch" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-slideshow-2.jpg' %}" alt="slideshow-background" width="1210" height="438" data-uk-img>
+								<div class="uk-position-center uk-width-1-1@m uk-overlay monee-slide2-text">
+									<div class="uk-text-center uk-animation-slide-top-small">
+										<h1 class="uk-margin-remove-bottom">Award-winning FX broker</h1>
+										<p class="uk-text-lead uk-margin-remove-top uk-visible@m">Lightning-fast execution. Exceptional client service.</p>
+										<div class="uk-flex uk-flex-center uk-visible@m">
+											<div class="uk-width-2-3@m" data-uk-grid>
+												<div class="uk-child-width-1-3@m" data-uk-grid>
+													<div>
+														<img class="uk-border-rounded uk-margin-remove-bottom" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-1-award-1.png' %}" alt="monee-award1" width="148"
+															height="90" data-uk-img>
+													</div>
+													<div>
+														<img class="uk-border-rounded uk-margin-remove-bottom" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-1-award-2.png' %}" alt="monee-award2" width="148"
+															height="90" data-uk-img>
+													</div>
+													<div>
+														<img class="uk-border-rounded uk-margin-remove-bottom" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-1-award-3.png' %}" alt="monee-award3" width="148"
+															height="90" data-uk-img>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="uk-height-1-1 uk-light monee-custom-slideshow" data-uk-grid>
+								<div class="uk-position-center-left uk-width-1-2@m uk-height-1-1 uk-overlay uk-background-primary">
+									<!-- <img class="uk-position-left uk-animation-slide-bottom-small img-stretch" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-slideshow-graph.png' %}" alt="slideshow-image"
+										data-width data-height data-uk-img> -->
+									<div class="uk-position-center-left uk-padding uk-text-center uk-text-left@m monee-slide1-text">
+										<div class="uk-animation-slide-top-small">
+											<h3 class="uk-margin-remove-bottom">Setting strong</h3>
+											<h1 class="uk-margin-remove-top">foundations</h1>
+											<a href="{% url 'signup' %}" class="uk-button uk-button-primary uk-border-rounded">Open an Account</a>
+										</div>
+									</div>
+								</div>
+								<div class="uk-position-center-right uk-width-1-2@m uk-height-1-1 uk-visible@m">
+									<img class="uk-position-right uk-animation-slide-bottom-small img-stretch" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-slideshow-1.jpg' %}" alt="slideshow-image" data-width
+										data-height data-uk-img>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="uk-container uk-light">
+						<ul class="uk-slideshow-nav uk-dotnav uk-position-bottom-right"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slideshow content end -->
+
+
+		<!-- section content begin -->
+		<div class="uk-section uk-section-small in-monee-10">
+			<div class="uk-container">
+				<div class="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@s uk-child-width-1-5@m uk-text-center" data-uk-grid>
+					<div class="uk-width-1-1 uk-margin-bottom">
+						<div class="monee-price-ticker">
+							<div class="uk-position-relative uk-visible-toggle" tabindex="-1" data-uk-slider="autoplay: true" data-autoplay-interval="3000">
+								<div class="tradingview-widget-container"><div class="tradingview-widget-container__widget"></div><div id="tradingview_3e2"></div><div class="tradingview-widget-copyright"></div><div><div style="width: 100%; height: 46px;"><style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3ABTCUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3AETHUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3AMATICUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3ASOLUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22BINANCE%3AMANAUSDT%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AEURUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22regular%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A46%2C%22utm_source%22%3A%22theedgetrades.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22theedgetrades.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 46px; width: 100%;"></iframe></div></div></div>
+							</div>
+						</div>
+						<h2 class="uk-margin-remove-bottom">Over 16,000 markets and more ways to trade</h2>
+						<p class="uk-margin-small-top">Trade CFDs on FX, commodities, indices, cryptocurrenceis and more with  to take advantage of both rising and falling prices.</p>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-body">
+							<i class="fas fa-money-bill-wave fa-2x uk-margin-small-bottom"></i><br>
+							<span class="uk-label">Forex</span>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-body">
+							<i class="fas fa-chart-bar fa-2x uk-margin-small-bottom"></i><br>
+							<span class="uk-label">Indices</span>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-body">
+							<i class="fas fa-coins fa-2x uk-margin-small-bottom"></i><br>
+							<span class="uk-label">Crypto</span>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-default uk-card-body">
+							<i class="fas fa-file-invoice-dollar fa-2x uk-margin-small-bottom"></i><br>
+							<span class="uk-label">Shares</span>
+						</div>
+					</div>
+					<div class="uk-visible@m">
+						<div class="uk-card uk-card-default uk-card-body">
+							<i class="fas fa-oil-can fa-2x uk-margin-small-bottom"></i><br>
+							<span class="uk-label">Commodities</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content end -->
+
+		<div class="uk-section in-monee-17">
+			<div class="uk-container">
+				<h3>How PIPFX works</h3>
+				<div class="uk-grid">
+					<div class="uk-width-1-1">
+						<div class="uk-card uk-card-default">
+							<div class="uk-card-body">
+								<div class="uk-grid uk-child-width-1-1 uk-child-width-1-3@m" data-uk-grid>
+									<div>
+										<div class="uk-grid uk-grid-small">
+											<div class="uk-width-auto">
+												<div class="in-icon-wrap small primary-color">
+													<span class="uk-text-bold">1</span>
+												</div>
+											</div>
+											<div class="uk-width-expand">
+												<h3 class="uk-margin-remove-bottom">CREATE AN ACCOUNT</h3>
+												<p class="uk-margin-small-top uk-margin-remove-bottom">Simply click on the register button to create a free account for yourself. Its quick and easy.</p>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-grid uk-grid-small">
+											<div class="uk-width-auto">
+												<div class="in-icon-wrap small primary-color uk-text-bold">
+													<span class="uk-text-bold">2</span>
+												</div>
+											</div>
+											<div class="uk-width-expand">
+												<h3 class="uk-margin-remove-bottom">CHOOSE AN INVESTMENT PLAN</h3>
+												<p class="uk-margin-small-top uk-margin-remove-bottom">Select an investment plan of your choice. Our plans start from as low as $499.99!</p>
+											</div>
+										</div>
+									</div>
+									<div>
+										<div class="uk-grid uk-grid-small">
+											<div class="uk-width-auto">
+												<div class="in-icon-wrap small primary-color uk-text-bold">
+													<span class="uk-text-bold">3</span>
+												</div>
+											</div>
+											<div class="uk-width-expand">
+												<h3 class="uk-margin-remove-bottom">ALLOW US TO DO THE REST</h3>
+												<p class="uk-margin-small-top uk-margin-remove-bottom">Our expert traders do all the hardwork for you while you get returns on your investments.Access 180+ instruments across all asset classes on MT4 / MT5</p>
+											</div>
+										</div>
+									</div>
+									
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div style="height: 500px">
+			<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": "100%",
+  "height": "100%",
+  "defaultColumn": "overview",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "USD",
+  "colorTheme": "light",
+  "locale": "ca_ES"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+		</div>
+
+
+
+		<div class="uk-section in-monee-8">
+			<div class="uk-container">
+				<h3>Trade Anytime, Anywhere</h3>
+				<div class="uk-grid uk-grid-divider uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-grid>
+
+					<div class="uk-width-1-3@m uk-width-1-1@s">
+						<img class="uk-float-left uk-margin-remove-adjacent uk-margin-right uk-margin-small-top uk-margin-large-bottom" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-8-image.svg' %}" alt="monee-image5" width="82" height="142" data-uk-img>
+						<h3>High Liquidity</h3>
+						<p>With a built in Artificial Intelligence market maker that meets the high standards set by Wall Street, our model analysis based on over 250 market parameters and high liquidity.</p>
+					</div>
+					<div>
+						<article class="uk-article">
+
+							<h3 class="uk-margin-top uk-margin-remove-bottom">Secure And Stable</h3>
+
+							<p>We conduct the multinodular structure which meets the requirements set by the IT surveillance logical structure from the Financial Industry, ensuring steady operations of our systems.</p>
+						</article>
+					</div>
+					<div>
+						<article class="uk-article">
+
+							<h3 class="uk-margin-top uk-margin-remove-bottom">Multiples Tokens Supported</h3>
+
+							<p>Constantly introducing and listing high quality digital currencies from all over the world, providing users with various types of transactional services in most digital currencies.</p>
+
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content begin -->
+		<div class="uk-section in-monee-6">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-1-1">
+						<h2>Trade stocks on our Intuitive,<br>easy-to-use and powerful platform</h2>
+						<div class="uk-child-width-1-1 uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-grid>
+							<div>
+								<p class="uk-margin-remove-top">Our award-winning platform gives you access to powerful technical charting & fundamental research tools. See for yourself how equity trading at  Capital gives you some of the best value.</p>
+								<a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an Account</a>
+							</div>
+							<div>
+								<div class="uk-text-center monee-fee-wrapper">
+									<h3 class="uk-text-uppercase uk-margin-remove-bottom">stocks</h3>
+									<h1 class="uk-margin-remove-top">
+										<span class="monee-currency">$</span>
+										<span class="monee-fee">4</span>
+										95
+									</h1>
+									<p class="uk-margin-remove-top uk-margin-remove-bottom">Flat-rate stocks</p>
+									<span class="uk-label uk-label-warning uk-margin-remove-top">Other fee may apply</span>
+								</div>
+							</div>
+							<div class="uk-visible@m">
+								<img class="in-offset-top-60 uk-align-right" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-6-mockup.png' %}" alt="monee-mockup" width="350" height="258" data-uk-img>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content end -->
+		
+		<!-- section content begin -->
+		
+		<!-- section content end -->
+		<!-- section content begin -->
+		<!-- <div class="uk-section in-monee-9 in-offset-top-20 in-offset-bottom-20">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-1-1">
+						<hr>
+						<h2 class="uk-margin-small-bottom">Open your account</h2>
+						<p class="uk-text-lead uk-margin-remove-top uk-visible@m">Connect with over 5 millions investors in the world’s leading social investment network</p>
+						<form class="uk-grid uk-grid-small uk-margin-bottom" data-uk-grid>
+							<div class="uk-width-1-1 uk-width-1-5@m">
+								<input class="uk-input uk-border-rounded" type="text" placeholder="Full name">
+							</div>
+							<div class="uk-width-1-1 uk-width-1-5@m">
+								<input class="uk-input uk-border-rounded" type="text" placeholder="Email address">
+							</div>
+							<div class="uk-width-1-1 uk-width-1-5@m">
+								<input class="uk-input uk-border-rounded" type="text" placeholder="Phone number">
+							</div>
+							<div class="uk-width-1-1 uk-width-1-5@m">
+								<button class="uk-button uk-button-primary uk-border-rounded uk-width-expand uk-width-auto@m">Create Account</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- section content end -->
+
+		<!-- section content begin -->
+		<div class="uk-section in-monee-5">
+			<div class="uk-container">
+				<div class="uk-grid uk-child-width-1-1 uk-child-width-1-3@m uk-child-width-1-2@s uk-text-center" data-uk-grid>
+					<div class="uk-width-1-1">
+						
+						<h2><span style="font-size: 15px; font-style: italic;">What we offer </span> <br>PIPFX FEATURES</h2>
+					</div>
+					<div class="uk-transition-toggle">
+						<div class="uk-inline-clip">
+							<img class="uk-border-rounded uk-margin-remove-bottom uk-width-1-1" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/mining.jpg' %}" alt="monee-image1" width="340" height="160" data-uk-img>
+							<div class="uk-position-small uk-position-bottom-right">
+								<a href="#" class="uk-icon-button fas fa-link fa-sm uk-transition-slide-right-small"></a>
+							</div>
+						</div>
+
+						<h3 class="uk-margin-top uk-margin-remove-bottom">Crypto Mining</h3>
+						<p class="uk-margin-small-top">We help you mine various cryptocurrencies and bring reasonable returns to your portfolio without you having to do any work yourself.</p>
+					</div>
+					<div class="uk-transition-toggle">
+						<div class="uk-inline-clip">
+							<img class="uk-border-rounded uk-margin-remove-bottom uk-width-1-1" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/user-friendly-interface.png' %}" alt="monee-image2" width="340" height="160" data-uk-img>
+							<div class="uk-position-small uk-position-bottom-right">
+								<a href="#" class="uk-icon-button fas fa-link fa-sm uk-transition-slide-right-small"></a>
+							</div>
+						</div>
+						<h3 class="uk-margin-top uk-margin-remove-bottom">Friendly Interface</h3>
+						<p class="uk-margin-small-top">Whether you are a beginner or a professional in cryptocurrency trading, we are sure that you will find our platform easy to use.</p>
+					</div>
+					<div class="uk-transition-toggle uk-visible@m">
+						<div class="uk-inline-clip">
+							<img class="uk-border-rounded uk-margin-remove-bottom uk-width-1-1" src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/flexibleplan.jpeg' %}" alt="monee-image3" width="340" height="160" data-uk-img>
+							<div class="uk-position-small uk-position-bottom-right">
+								<a href="#" class="uk-icon-button fas fa-link fa-sm uk-transition-slide-right-small"></a>
+							</div>
+						</div>
+						<h3 class="uk-margin-top uk-margin-remove-bottom">Flexible Plans</h3>
+						<p class="uk-margin-small-top">Flexible plans no matter your portfolio size. Reasonable trading fees for traders and all market makers.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content end -->
+
+		<!-- section content begin -->
+		<div class="uk-section in-monee-2">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-1-1">
+						<div class="uk-card uk-card-default uk-background-center-right uk-background-contain uk-background-image@s" style="background-image: url({% static 'frontpage/img/in-monee-2-background.png' %});">
+							<div class="uk-card-body">
+								<div class="uk-grid uk-margin-small-top uk-margin-small-bottom">
+									<div class="uk-width-1-1 uk-width-3-5@s uk-width-2-5@m uk-margin-small-left">
+										<div class="uk-flex uk-flex-left uk-margin-bottom">
+											<!-- <span class="uk-margin-medium-right"><img src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-2-platform-2.svg' %}" alt="monee-windows" width="33" height="38" data-uk-img></span> -->
+											<span class="uk-margin-medium-right"><img src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-2-platform-2.svg' %}" alt="monee-apple" width="33" height="38" data-uk-img></span>
+											<span><img src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/in-monee-2-platform-3.svg' %}" alt="monee-android" width="33" height="38" data-uk-img></span>
+										</div>
+										<h2 class="uk-margin-small-top uk-margin-remove-bottom">Trade on world class platform</h2>
+										<!-- <p class="uk-margin-small-top">Facilis este expedita distinctio libero tempore soluta nobis eligendi cumque nihil impedit</p> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section content end -->
+</main>
+{% endblock content %}

@@ -1,0 +1,219 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Premium HTML5 Template by Indonez">
+	<meta name="keywords" content="blockit, uikit3, indonez, handlebars, scss, javascript">
+	<meta name="author" content="Indonez">
+	<meta name="theme-color" content="#4184DD">
+	<!-- preload assets -->
+	<link rel="preload" href="{% static 'frontpage/fonts/fa-brands-400.woff2' %}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{% static 'frontpage/fonts/fa-solid-900.woff2' %}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{% static 'frontpage/fonts/open-sans-v17-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{% static 'frontpage/fonts/work-sans-v5-latin-300.woff2' %}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{% static 'frontpage/fonts/work-sans-v5-latin-regular.woff2' %}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{% static 'frontpage/fonts/work-sans-v5-latin-700.woff2' %}" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="{% static 'frontpage/css/style.css' %}" as="style">
+	<link rel="preload" href="{% static 'frontpage/js/vendors/uikit.min.js' %}" as="script">
+	<link rel="preload" href="{% static 'frontpage/js/utilities.min.js' %}" as="script">
+	<link rel="preload" href="{% static 'frontpage/js/config-theme.js' %}" as="script">
+	<!-- stylesheet -->
+	<link rel="stylesheet" href="{% static 'frontpage/css/style.css' %}">
+	<!-- uikit -->
+	<script src="{% static 'frontpage/js/vendors/uikit.min.js' %}"></script>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="frontpage/img/favicon.ico" type="image/x-icon">
+	<!-- touch icon -->
+	<link rel="apple-touch-icon-precomposed" href="frontpage/img/apple-touch-icon.png">
+	<link rel="stylesheet" href="{% static 'toastr/toastr.min.css' %}">
+	<title>PIPFX - Home</title>
+</head>
+
+<body>
+	<!-- page loader begin -->
+	<div class="page-loader">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<!-- page loader end -->
+	<!-- header begin -->
+	<header>
+		<div class="uk-section uk-padding-remove-vertical">
+			<div class="uk-container">
+				<div class="uk-grid">
+					<div class="uk-width-1-1">
+						<div class="uk-flex uk-flex-center uk-flex-between@s in-header-account">
+							<ul class="uk-subnav uk-subnav-divider">
+								<li><a href="#">Personal</a></li>
+							</ul>
+							<div class="uk-visible@s">
+								<a href="{% url 'login' %}" class="uk-button uk-button-small uk-button-default">Login<i class="fas fa-right-to-bracket"></i></a>
+								<a href="{% url 'signup' %}" class="uk-button uk-button-small uk-button-primary uk-margin-small-left">Create Account</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="uk-navbar-container uk-navbar-transparent" data-uk-sticky="show-on-up: true; top: 80; animation: uk-animation-fade">
+				<div class="uk-container" data-uk-navbar>
+					<div class="uk-navbar-left uk-width-1-1 uk-flex uk-flex-between">
+						<a class="uk-navbar-item uk-logo" href="index.html">
+							<!-- <img src="{% static 'img/user/header-logo-TfOCmq.svg' %}" alt="logo" width="120" height="54"> -->
+							PIPFX
+						</a>
+						<ul class="uk-navbar-nav uk-visible@m">
+							
+							<li><a href="{% url 'front-home' %}">Home</a></li>
+							<li><a href="{% url 'front-doge' %}">Doge Mining</a></li>
+							<li><a href="{% url 'front-bitcoin' %}">Bitcoin Mining</a></li>
+							<li><a href="{% url 'front-mining' %}">About Mining</a></li>
+							<li><a href="{% url 'front-responsible' %}">Responsible Trading</a></li>
+							<li><a href="{% url 'front-leverage' %}">What is Leverage</a></li>
+							<li><a href="{% url 'front-copy' %}">Copy Expert Traders</a></li>
+							<li><a href="{% url 'front-option' %}">Option Trading</a></li>
+							<li><a href="{% url 'front-copy-trading' %}">Copy Trading</a></li>
+							<li><a href="{% url 'front-stock' %}">Stock Trading</a></li>
+							<li><a href="{% url 'front-forex' %}">Forex Trading</a></li>
+							<li><a href="{% url 'front-risk' %}">General Risk Disclousure</a></li>
+							<li><a href="{% url 'front-term' %}">Terms of Service</a></li>
+							<li><a href="{% url 'front-policy' %}">Privacy Policy</a></li>
+							<li><a href="{% url 'front-cookie' %}">Cookie Policy</a></li>
+							<li><a href="{% url 'front-about' %}">About Us</a></li>
+							</li>
+							
+						</ul>
+					</div>
+					<div class="uk-navbar-right">
+						<div class="uk-navbar-item" hidden>
+							<div class="in-optional-nav">
+								<a href="signin.html" class="uk-button uk-button-small uk-button-default">Login<i class="fas fa-right-to-bracket"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- header end -->
+	{% block content %}
+    {% endblock content %}
+	<!-- footer begin -->
+	<footer>
+		<div class="uk-section uk-padding-remove-vertical uk-margin-medium-top">
+			<div class="uk-container">
+				
+				<div class="uk-child-width-1-1 uk-child-width-1-4@m uk-child-width-1-2@s" data-uk-grid="">
+
+					<div>
+						<a class="uk-logo" href="index.html">
+							<img src="{% static 'frontpage/img/in-lazy.gif' %}" data-src="{% static 'frontpage/img/logo.png' %}" alt="logo" width="120" height="54" data-uk-img>
+						</a>
+						<h4>PIPFX</h4>
+
+
+						<!-- <ul class="uk-list uk-link-text">
+							<li><a href="forextrading.html">Forex</a></li>
+							<li><a href="copytrading.html">Crypto</a></li>
+							<li><a href="stocktrading.html">Stocks</a></li>
+							<li><a href="aboutmining">Mining</a></li>
+						</ul> -->
+					</div>
+
+					<div>
+						<h4>Markets</h4>
+						<ul class="uk-list uk-link-text">
+							<li><a href="forextrading.html">Forex</a></li>
+							<li><a href="copytrading.html">Crypto</a></li>
+							<li><a href="stocktrading.html">Stocks</a></li>
+							<li><a href="aboutmining">Mining</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4>Useful</h4>
+						<ul class="uk-list uk-link-text">
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
+							<li><a href="signin.html">My Account</a></li>
+							<li><a href="signup.html">Create Account</a></li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="uk-grid">
+
+					<div class="uk-width-1-1 in-footer-disclaimer">
+						<p>*Risk Warning: Trading in Forex/CFDs and Other Derivatives is highly speculative and carries a high level of risk. These products may not be suitable for everyone and you should ensure that you understand the risks involved.<br><br>
+
+All materials and services provided on this site are subject to copyright and belong to “PIPFX”. Any use of materials of this website must be approved by an official representative of “The Edge Trades”, and contain a link to the original resource. Any third-party companies of “Online – broker” do not have the right to use materials of this website as well as any distorted writing of “PIPFX”. In case of violation, they will be prosecuted in accordance with legislation of the intellectual property protection. <br><br>
+
+All brokerage activity on this website is provided by pipfx.</p>
+					</div>
+
+					<div class="uk-width-1-1 uk-text-small">
+						<div class="uk-card uk-card-small uk-card-default uk-border-rounded uk-margin-bottom">
+							<div class="uk-card-body">
+								<div class="in-footer-copyright" data-uk-grid="">
+									<div class="uk-width-3-4@s uk-width-1-2@m uk-text-center uk-text-left@s">
+										<p class="copyright-text">Copyright ©2023 PIPFX. All Rights Reserved.</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+	<!-- to top begin -->
+	<a href="#" class="to-top uk-visible@m" data-uk-scroll>
+		Top<i class="fas fa-chevron-up" ></i>
+	</a>
+	<!-- to top end -->
+	<!-- javascript -->
+	<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+  <script src="{% static 'toastr/toastr.min.js' %}"></script>
+  <script>
+      $(function(){
+          toastr.options = {
+          "closeButton": true,
+          "debug": false,
+          "newestOnTop": true,
+          "progressBar": true,
+          "positionClass": "toast-bottom-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "10000",
+          "extendedTimeOut": "6000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+      }
+      {% if messages %}
+      {% for message in messages %}
+          toastr.{{ message.tags }}("{{ message }}")
+      {% endfor %}
+      {% endif %}
+
+      });
+  </script>
+	<script src="{% static 'frontpage/js/utilities.min.js' %}"></script>
+	<script src="{% static 'frontpage/js/config-theme.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from indonez.com/html-demo/monee/homepage2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 28 Mar 2024 01:12:15 GMT -->
+</html>

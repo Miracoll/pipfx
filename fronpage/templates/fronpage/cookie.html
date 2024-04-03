@@ -1,0 +1,34 @@
+{% extends 'fronpage/main.html' %}
+{% load static %}
+{% block content %}
+<main>
+		
+	<!-- section content begin -->
+	<div class="uk-section">
+		<div class="uk-container">
+			<div class="uk-grid">
+				<div class="uk-width-1-1">
+					<div class="uk-card uk-card-primary uk-box-shadow-small uk-border-rounded uk-background-cover " style="background-image: url({% static 'frontpage/img/blockit/in-card-background-1.jpg' %});">
+						<div class="uk-card-body" style="    background: linear-gradient(rgba(3, 6, 126, 0.85), rgba(122, 0, 147, 0.85)); opacity: 0.8;">
+							<h2 class="uk-margin-remove-bottom ">Cookie Policy</h2>
+							<p class="uk-margin-small-top">Last Revised: February 1, 2024</p>
+							<!-- <a class="uk-button uk-button-primary uk-border-rounded" href="#">Open an Account</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- section content end -->
+
+	<div class="uk-container">
+		<div class="uk-margin-medium uk-card uk-card-default uk-card-body">
+			<p>
+				<div class="container"><span>pipfx uses cookies to: Optimize your trading experience, including remembering your preferences, location, preferred language, browser and other details;<br></span><span><br></span><span>Authenticate your identity for security purposes;<br></span><span><br></span><span>Maintain our website and certain functions available on it;<br></span><span><br></span><span>Analyze and track the use of our services;<br></span><span><br></span><span>Adjust our platform according to your trading habits and our regulatory requirements.<br></span><span><br></span><span><br></span><span><br></span><span>WHAT ARE COOKIES<br></span><span><br></span><span>Cookies are tiny pieces of data that are sent to your computer by a website and stored on your computer. Cookies are non-executable and cannot be used to install malware. They allow websites to recognize visitors when they return and include basic information about them that is checked and updated every time you visit the website. For more information see: http://www.allaboutcookies.org/.<br></span><span><br></span><span><br></span><span><br></span><span>MANAGING COOKIES<br></span><span><br></span><span>At pipfx, we respect your right to privacy and are therefore happy to provide you with tools to manage the cookies you receive from our web services. Some cookies are essential to the performance of our platform (you cannot opt out from these cookies if you wish to use our platform). Below you will find a list of some of the third party cookies used by pipfx.  For those users who would prefer not to receive non-essential cookies, we have provided an “opt out” option for you to select.<br></span><span><br></span><span>Your browser may also allow you to block the storage of cookies on your computer; please refer to your browser’s “Help” menu or website for more information. If you use our web services without blocking cookies you are actually consenting to the cookies.<br></span></div>
+				
+			</p>
+		</div>
+	</div>
+
+</main>
+{% endblock content %}
